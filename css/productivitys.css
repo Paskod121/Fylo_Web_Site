@@ -2,3 +2,10 @@
 body{
     color: black;
 }
+.productivitys{
+    color: #fff;
+    display: flex;
+}
+.imgproductivitys{
+    justify-self: center;
+}
