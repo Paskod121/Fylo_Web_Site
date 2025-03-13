@@ -1,4 +1,7 @@
 /* Styles pour la section héro */
-body{
-    color: black;
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
