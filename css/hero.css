@@ -4,4 +4,26 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    background-color: var(--color-dark-blue-intro);
+    h1{
+        font-family: var(--font-family-headings);
+        font-size: 2.5rem;
+        text-align: center;
+        font-weight: var(--font-weight-bold);
+        color: var(--color-white);
+        
+    }
+
+    
+    button{
+        background: linear-gradient(to right bottom, var(--color-cyan), var(--color-blue));
+        color: var(--color-white);
+        border: none;
+        padding: .9rem 1.5rem;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        border-radius: 20px;
+    }
 }
