@@ -1,1 +1,12 @@
 /* Styles pour la section productivité */
+body{
+    color: black;
+}
+.productivitys{
+    background-color: black;
+    color: #fff;
+    display: flex;
+}
+.imgproductivitys{
+    justify-self: center;
+}
