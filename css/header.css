@@ -1,16 +1,35 @@
 /* Styles pour l'en-tête du site */
-header {
-    background-color: hsl(218, 28%, 13%);
-    display: flex;
+/* Un aide pour celui qui code main.css */
+/* body {
     margin: 0;
-    ul{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 2rem;
-        width: 100%;
-        li{
-            list-style: none;
-        }
-    }
-}
+    padding: 0;
+    font-family: var(--font-family-body);
+  } */
+header {
+    background: var(--color-dark-blue-main);
+    font-family: var(--font-family-headings);
+    color: var(--color-white);
+    padding: var(--spacing-md) 0; /* Espacement en haut et en bas */
+    font-weight: var(--font-weight-regular);
+    display: flex;
+    justify-content: space-between; /* Sépare les éléments */
+    align-items: center; /* Aligne verticalement */
+    padding: 20px;
+    font-size: 14px;
+  }
+  header ul {
+    list-style: none;
+    display: flex;
+    gap: var(--spacing-lg); /* Grand espacement de 2rem entre les éléments */
+    padding: 0;
+    margin: 0;
+    order: 1; /* Place la liste avant le logo */
+    margin-right: 30px;/* Ajoute un espace à droite */
+  }
+  header ul li {
+    cursor: pointer;
+  }
+  header img {
+    order: -1; /* Place le logo après la liste */
+  }
+  
