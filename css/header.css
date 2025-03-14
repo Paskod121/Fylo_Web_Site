@@ -38,17 +38,42 @@ header {
     order: -1; /* Place le logo après la liste */
   }
 /* Responsivité */
-@media (max-width: 375px) {
-  header {
-    padding: 20px 5%;
+  @media (min-width: 375px) {
+    header {
+      padding: 10px 5%;
+    }
+  
+    header img {
+      width: 30%; /* Le logo prend 80% de la largeur de l'écran */
+      max-width: 250px; /* Empêcher qu'il devienne trop grand */
+    }
+  
+    header ul {
+      gap: 1rem; /* Réduction de l'espace entre les éléments de la liste */
+      font-size: 10px;
+      margin-right: 2px;
+    }
+    header ul li {
+      font-size: 14px;
+      margin-left: 2px;
+
   }
-  header ul {
-    gap: 15px;
-    font-size: 14px;
-  }
-}
-@media (max-width: 1440px) {
+@media (min-width: 1440px) {
   header {
     padding: 20px 10%;
+  }
+  header ul {
+    gap: 3rem; /* Réduction de l'espace entre les éléments de la liste */
+    font-size: 4px;
+  }
+  header ul li {
+    font-size: 14px;
+    gap: 3rem;
+    margin-left: 2px;
+    padding-left: var(--spacing-lg);
+  } 
+  header img {
+    width: 80%; /* Le logo prend 80% de la largeur de l'écran */
+    max-width: 250px; /* Empêcher qu'il devienne trop grand */
   }
 }
