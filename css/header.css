@@ -6,7 +6,7 @@
     font-family: var(--font-family-body);
   } */
 header {
-    background: var(--color-dark-blue-main);
+    background: hsl(217, 28%, 15%);
     font-family: var(--font-family-headings);
     color: var(--color-white);
     padding: var(--spacing-md) 0; /* Espacement en haut et en bas */
