@@ -1,31 +1,28 @@
-/* VARIABLES.CSS */
-/* Fichier de variables CSS pour le projet Fylo */
+/* Variables CSS pour le projet Fylo */
 
 :root {
-    /* Couleurs Primaires */
-    --color-dark-blue-intro: hsl(217, 28%, 15%);    /* Arrière-plan de l'intro et inscription email */
-    --color-dark-blue-main: hsl(218, 28%, 13%);     /* Arrière-plan principal */
-    --color-dark-blue-footer: hsl(216, 53%, 9%);    /* Arrière-plan du pied de page */
-    --color-dark-blue-testimonials: hsl(219, 30%, 18%);  /* Arrière-plan des témoignages */
-  
-    /* Couleurs d'Accent */
-    --color-cyan: hsl(176, 68%, 64%);               /* Partie cyan du dégradé pour les appels à l'action */
-    --color-blue: hsl(198, 60%, 50%);               /* Partie bleue du dégradé pour les appels à l'action */
-    --color-light-red: hsl(0, 100%, 63%);           /* Couleur d'erreur */
-  
-    /* Couleurs Neutres */
-    --color-white: hsl(0, 0%, 100%);                /* Blanc pour le texte et certains éléments */
-  
+    /* Couleurs primaires */
+    --dark-blue-intro: hsl(217, 28%, 15%); /* Couleur de fond pour l'intro et le formulaire d'inscription */
+    --dark-blue-main: hsl(218, 28%, 13%); /* Couleur de fond principale */
+    --dark-blue-footer: hsl(216, 53%, 9%); /* Couleur de fond du pied de page */
+    --dark-blue-testimonials: hsl(219, 30%, 18%); /* Couleur de fond des témoignages */
+    
+    /* Couleurs d'accent */
+    --cyan: hsl(176, 68%, 64%); /* Cyan pour le gradient du CTA */
+    --blue: hsl(198, 60%, 50%); /* Bleu pour le gradient du CTA */
+    --light-red: hsl(0, 100%, 63%); /* Rouge clair pour les erreurs */
+    
+    /* Couleurs neutres */
+    --white: hsl(0, 0%, 100%); /* Blanc */
+    
     /* Typographie */
-    --font-size-body: 14px;                         /* Taille de base du texte */
+    --body-font-size: 14px; /* Taille de police pour le corps du texte */
+    --font-heading: 'Raleway', sans-serif; /* Police pour les titres, CTA et navigation */
+    --font-body: 'Open Sans', sans-serif; /* Police pour le corps du texte */
     
-    /* Familles de Polices */
-    --font-family-headings: 'Raleway', sans-serif;  /* Police pour titres, CTA et navigation */
-    --font-family-body: 'Open Sans', sans-serif;    /* Police pour le corps du texte */
-    
-    /* Poids des Polices */
-    --font-weight-regular: 400;                     /* Poids normal pour le texte standard */
-    --font-weight-bold: 700;                        /* Poids gras pour les éléments importants */
+    /* Poids des polices */
+    --font-regular: 400; /* Poids régulier */
+    --font-bold: 700; /* Poids gras */
     
     /* Points de Rupture pour Responsive */
     --mobile-width: 375px;                          /* Largeur de référence pour mobile */
@@ -43,8 +40,11 @@
     --spacing-md: 1.5rem;                           /* Espacement moyen (24px) */
     --spacing-lg: 2rem;                             /* Grand espacement (32px) */
     --spacing-xl: 3rem;                             /* Très grand espacement (48px) */
+    /* Tailles d'écran */
+    --mobile-width: 375px; /* Largeur pour mobile */
+    --desktop-width: 1440px; /* Largeur pour desktop */
+    --min-width: 320px; /* Largeur minimale pour la responsivité */ 
   }
-  
   /* 
     Comment utiliser ces variables:
     
