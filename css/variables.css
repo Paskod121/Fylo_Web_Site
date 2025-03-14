@@ -35,6 +35,7 @@
     --border-radius-small: 4px;                     /* Coins arrondis (petits) */
     --border-radius-medium: 8px;                    /* Coins arrondis (moyens) */
     --border-radius-large: 12px;                    /* Coins arrondis (grands) */
+    --border-radius-xlarge: 20px;                   /* Coins arrondis (très grands) */
     
     /* Espacement */
     --spacing-xs: 0.5rem;                           /* Très petit espacement (8px) */
