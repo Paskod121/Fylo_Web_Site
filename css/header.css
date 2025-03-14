@@ -37,4 +37,18 @@ header {
   header img {
     order: -1; /* Place le logo après la liste */
   }
-  
+/* Responsivité */
+@media (max-width: 375px) {
+  header {
+    padding: 20px 5%;
+  }
+  header ul {
+    gap: 15px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 1440px) {
+  header {
+    padding: 20px 10%;
+  }
+}
