@@ -1,1 +1,69 @@
 /* Styles pour la section d'appel à l'action */
+.cta {
+    background-color: hsl(217, 28%, 15%);
+    width: 60%;
+    height: 40%;
+    border-radius: 12px;
+    padding: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 6px 6px rgb(73, 70, 92);
+    transition: 0.2s;
+}
+section h1 {
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    font-size: 190%;
+}
+section p {
+    text-align: center;
+    color: aliceblue;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+section input {
+    border-radius: 30px;
+    padding: 2%;
+    width: 60%;
+    margin: 3%;
+    margin-left: 2%;
+    border: none;
+}
+section button {
+    border-radius: 30px;
+    padding: 2%;
+    width: 28%;
+    background-color: hsl(176, 68%, 64%);
+    border: none;
+}
+/* Mobile : 375px */
+@media (max-width: 375px) {
+    .cta {
+        width: 90%; /* Réduire la largeur */
+        padding: 10px;
+    }
+    section h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    section p {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+    section input, section button{
+        width: 97%;
+        height: 50px; /* Facilite le clic sur mobile */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    section button {
+        margin-left: 1%;
+    }
+}
+/* Desktop : 1440px */
+@media (min-width: 1024px) {
+    .cta {
+        width: 50%; /* Largeur confortable sur écran plus large */
+    }
+}
