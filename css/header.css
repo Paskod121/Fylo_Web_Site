@@ -38,15 +38,21 @@ header {
     order: -1; /* Place le logo après la liste */
   }
 /* Responsivité */
-@media (max-width: 375px) {
-  header {
-    padding: 20px 5%;
+  @media (min-width: 375px) {
+    header {
+      padding: 10px 5%;
+    }
+  
+    header img {
+      width: 20%; /* Le logo prend 80% de la largeur de l'écran */
+      max-width: 250px; /* Empêcher qu'il devienne trop grand */
+    }
+  
+    header ul {
+      gap: 2rem; /* Réduction de l'espace entre les éléments de la liste */
+      font-size: 12px;
+    }
   }
-  header ul {
-    gap: 15px;
-    font-size: 14px;
-  }
-}
 @media (max-width: 1440px) {
   header {
     padding: 20px 10%;
