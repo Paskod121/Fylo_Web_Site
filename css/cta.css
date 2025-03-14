@@ -9,6 +9,8 @@
     margin-right: auto;
     box-shadow: 5px 6px 6px rgb(73, 70, 92);
     transition: 0.2s;
+    position: absolute;
+    bottom: 0 !important; 
 }
 section h1 {
     color: hsl(0, 0%, 100%);
@@ -25,9 +27,7 @@ section p {
 section input {
     border-radius: 30px;
     padding: 2%;
-    width: 60%;
-    margin: 3%;
-    margin-left: 2%;
+    width: 40%;
     border: none;
 }
 section button {
@@ -62,7 +62,7 @@ section button {
     }
 }
 /* Desktop : 1440px */
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
     .cta {
         width: 50%; /* Largeur confortable sur écran plus large */
     }
