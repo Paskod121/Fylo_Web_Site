@@ -1,1 +1,69 @@
-/* Ce fichier contient toutes les variables CSS utilisées dans le projet */
+/* Variables CSS pour le projet Fylo */
+
+:root {
+    /* Couleurs primaires */
+    --dark-blue-intro: hsl(217, 28%, 15%); /* Couleur de fond pour l'intro et le formulaire d'inscription */
+    --dark-blue-main: hsl(218, 28%, 13%); /* Couleur de fond principale */
+    --dark-blue-footer: hsl(216, 53%, 9%); /* Couleur de fond du pied de page */
+    --dark-blue-testimonials: hsl(219, 30%, 18%); /* Couleur de fond des témoignages */
+    
+    /* Couleurs d'accent */
+    --cyan: hsl(176, 68%, 64%); /* Cyan pour le gradient du CTA */
+    --blue: hsl(198, 60%, 50%); /* Bleu pour le gradient du CTA */
+    --light-red: hsl(0, 100%, 63%); /* Rouge clair pour les erreurs */
+    
+    /* Couleurs neutres */
+    --white: hsl(0, 0%, 100%); /* Blanc */
+    
+    /* Typographie */
+    --body-font-size: 14px; /* Taille de police pour le corps du texte */
+    --font-heading: 'Raleway', sans-serif; /* Police pour les titres, CTA et navigation */
+    --font-body: 'Open Sans', sans-serif; /* Police pour le corps du texte */
+    
+    /* Poids des polices */
+    --font-regular: 400; /* Poids régulier */
+    --font-bold: 700; /* Poids gras */
+    
+    /* Tailles d'écran */
+    --mobile-width: 375px; /* Largeur pour mobile */
+    --desktop-width: 1440px; /* Largeur pour desktop */
+    --min-width: 320px; /* Largeur minimale pour la responsivité */ 
+    /* Poids des Polices */
+    --font-weight-regular: 400;                     /* Poids normal pour le texte standard */
+    --font-weight-bold: 700;                        /* Poids gras pour les éléments importants */
+    
+    /* Points de Rupture pour Responsive */
+    --mobile-width: 375px;                          /* Largeur de référence pour mobile */
+    --desktop-width: 1440px;                        /* Largeur de référence pour desktop */
+    
+    /* Valeurs Communes pour l'Interface */
+    --border-radius-small: 4px;                     /* Coins arrondis (petits) */
+    --border-radius-medium: 8px;                    /* Coins arrondis (moyens) */
+    --border-radius-large: 12px;                    /* Coins arrondis (grands) */
+    --border-radius-xlarge: 20px;                   /* Coins arrondis (très grands) */
+    
+    /* Espacement */
+    --spacing-xs: 0.5rem;                           /* Très petit espacement (8px) */
+    --spacing-sm: 1rem;                             /* Petit espacement (16px) */
+    --spacing-md: 1.5rem;                           /* Espacement moyen (24px) */
+    --spacing-lg: 2rem;                             /* Grand espacement (32px) */
+    --spacing-xl: 3rem;                             /* Très grand espacement (48px) */
+  }
+  /* 
+    Comment utiliser ces variables:
+    
+    1. Pour les couleurs: 
+       color: var(--color-white);
+       background-color: var(--color-dark-blue-main);
+    
+    2. Pour les polices:
+       font-family: var(--font-family-headings);
+       font-weight: var(--font-weight-bold);
+    
+    3. Pour les espacements:
+       margin: var(--spacing-md);
+       padding: var(--spacing-sm) var(--spacing-lg);
+       
+    4. Pour les media queries:
+       @media (min-width: var(--mobile-width)) { ... }
+  */

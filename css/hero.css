@@ -1,1 +1,56 @@
 /* Styles pour la section héro */
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background-color: var(--color-dark-blue-intro);
+    gap: var(--spacing-lg);
+    padding-bottom: var(--spacing-xl);
+    line-height: 1.5;
+    h1{
+        font-family: var(--font-family-headings);
+        font-size: 2rem;
+        text-align: center;
+        font-weight: var(--font-weight-bold);
+        color: var(--color-white);
+        z-index: 10;
+    }
+    
+    button{
+        background: linear-gradient(to right bottom, var(--color-cyan), var(--color-blue));
+        color: var(--color-white);
+        border: none;
+        padding: .9rem 4rem;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        border-radius: 20px;
+        z-index: 10;
+    }
+
+    .img-hero{
+        margin-top: var(--spacing-xl);
+        height: 50vh;
+        z-index: 10;
+    }
+
+    .bg-curvy{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    p{
+        color: var(--color-white);
+        text-align: center;
+        font-family: var(--font-family-body);
+        font-size: 1em;
+        width: 33%;
+        border: 2px solid red;
+        z-index: 10;
+    }
+}
