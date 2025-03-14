@@ -1,13 +1,16 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  
+  <link rel="stylesheet" href="css/hero.css">
+
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
 
   <link rel="stylesheet" href="css\cta.css">
@@ -23,10 +26,17 @@
   <link rel="stylesheet" href="css\variables.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
   <header>
     <img src="./images/logo.svg" alt="Logo fylo">
@@ -36,7 +46,6 @@
       <li>Sign In</li>
     </ul>
 </header>
-<main>
   <section class="hero">
     <img src="./images/illustration-intro.png" alt="Illustration of intro">
     <h1>All your files in one secure location, <br> accessible anywhere.</h1>
@@ -66,11 +75,15 @@
     </div>
   </section>
   <section class="productivitys">
-    <img src="./images/illustration-stay-productive.png" alt="Illustration stay productive">
-    <h1>Stay productive, <br> wherever you are</h1>
-    <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
-    <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
-    <p> <a href="#">See how Fylo works</a> <img src="./images/icon-arrow.svg" alt="arrow"></p>
+    <div>
+      <img src="./images/illustration-stay-productive.png" alt="Illustration stay productive" class="imgproductivitys">
+    </div>
+    <div>
+      <h1>Stay productive, <br> wherever you are</h1>
+      <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
+      <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
+      <p><a href="#" style="color:hsl(176, 68%, 64%);">See how Fylo works </a><img src="./images/icon-arrow.svg" alt="arrow"></p>
+    </div>
   </section>
   <section class="testimonials">
     <img src="./images/bg-quotes.png" alt="background quotes">

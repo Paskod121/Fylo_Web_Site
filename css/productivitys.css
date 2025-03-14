@@ -3,10 +3,45 @@ body{
     color: black;
 }
 .productivitys{
-    background-color: black;
+    background-color: hsl(218, 28%, 13%);
     color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
     display: flex;
+    flex-direction: row;
+    text-align: start;
+    align-items: center;
+    justify-content: space-between;
+    h1{
+        font-weight: 700;
+    }
 }
 .imgproductivitys{
     justify-self: center;
+}
+@media screen and (max-width:425px) {
+    .productivitys{
+        display: flex;
+        flex-direction: column;
+        h1{
+            text-overflow: clip;
+        }
+    }
+    .imgproductivitys{
+        justify-self: center;
+        width: 90%;
+        height: 90%;
+    }
+}
+@media screen and (min-width:1024px) {
+    .productivitys{
+        display: flex;
+        flex-direction: row;
+        h1{
+            white-space: pre-line;
+        }
+    }
+    .imgproductivitys{
+        justify-self: center;
+    }
 }
