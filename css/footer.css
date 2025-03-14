@@ -6,6 +6,7 @@
   font-family: var(--font-body); /* Utilisation de la police Open Sans définie pour le corps du texte */
   font-size: var(--body-font-size); /* Taille de police de 14px définie pour le corps du texte */
   font-weight: var(--font-regular); /* Poids de police normal (400) */
+  position: relative;
 }
 
 .footer-container {

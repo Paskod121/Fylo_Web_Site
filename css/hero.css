@@ -8,10 +8,11 @@
     background-color: hsl(217, 28%, 15%);
     gap: var(--spacing-lg);
     padding-bottom: var(--spacing-xl);
+
     line-height: 1.5;
     h1{
-        font-family: var(--font-family-he
-        font-size: 2rem
+        font-family: var(--font-heading);
+        font-size: 2rem;
         text-align: center;
         font-weight: var(--font-weight-bold);
         color: var(--color-white);
@@ -21,12 +22,13 @@
     button{
         color: var(--color-white);
         border: none;
-        padding: var(--spacing-md) var(--spacing-xs);
+        padding: var(--spacing-sm) var(--spacing-xl);
         background: linear-gradient(to right bottom, var(--cyan), var(--blue));
         font-size: 1rem;
         cursor: pointer;
         transition: background-color 0.3s ease;
         border-radius: 20px;
+        outline: none;
         z-index: 10;
     }
 
