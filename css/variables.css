@@ -28,6 +28,26 @@
     --mobile-width: 375px; /* Largeur pour mobile */
     --desktop-width: 1440px; /* Largeur pour desktop */
     --min-width: 320px; /* Largeur minimale pour la responsivité */ 
+    /* Poids des Polices */
+    --font-weight-regular: 400;                     /* Poids normal pour le texte standard */
+    --font-weight-bold: 700;                        /* Poids gras pour les éléments importants */
+    
+    /* Points de Rupture pour Responsive */
+    --mobile-width: 375px;                          /* Largeur de référence pour mobile */
+    --desktop-width: 1440px;                        /* Largeur de référence pour desktop */
+    
+    /* Valeurs Communes pour l'Interface */
+    --border-radius-small: 4px;                     /* Coins arrondis (petits) */
+    --border-radius-medium: 8px;                    /* Coins arrondis (moyens) */
+    --border-radius-large: 12px;                    /* Coins arrondis (grands) */
+    --border-radius-xlarge: 20px;                   /* Coins arrondis (très grands) */
+    
+    /* Espacement */
+    --spacing-xs: 0.5rem;                           /* Très petit espacement (8px) */
+    --spacing-sm: 1rem;                             /* Petit espacement (16px) */
+    --spacing-md: 1.5rem;                           /* Espacement moyen (24px) */
+    --spacing-lg: 2rem;                             /* Grand espacement (32px) */
+    --spacing-xl: 3rem;                             /* Très grand espacement (48px) */
   }
   /* 
     Comment utiliser ces variables:
