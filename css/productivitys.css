@@ -15,6 +15,12 @@ body{
     h1{
         font-weight: 700;
     }
+    a{
+        text-decoration: none;
+    }
+    #under{
+        border-bottom: 1px hsl(176, 68%, 64%) solid;
+    }
 }
 .imgproductivitys{
     justify-self: center;
@@ -24,7 +30,7 @@ body{
         display: flex;
         flex-direction: column;
         h1{
-            text-overflow: clip;
+            display: block;
         }
     }
     .imgproductivitys{
@@ -38,7 +44,7 @@ body{
         display: flex;
         flex-direction: row;
         h1{
-            white-space: pre-line;
+           display: block;
         }
     }
     .imgproductivitys{
