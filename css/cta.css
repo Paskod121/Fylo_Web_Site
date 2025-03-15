@@ -39,9 +39,9 @@
 }
 
 /* Mobile : 375px */
-@media (max-width: 375px) {
+@media (max-width: var(--mobile-width)) {
     .cta {
-        width: 90%; /* Réduire la largeur */
+        width: 50%; /* Réduire la largeur */
         padding: 10px;
     }
     .cta h1 {
