@@ -1,57 +1,85 @@
 /* Styles pour la section héro */
-.hero{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    background-color: hsl(217, 28%, 15%);
-    gap: var(--spacing-lg);
-    padding-bottom: var(--spacing-xl);
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  background-color: hsl(217, 28%, 15%);
+  gap: var(--spacing-lg);
+  padding-bottom: var(--spacing-xl);
+  width: 100%;
+  line-height: 1.5;
+  h1 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    text-align: center;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-white);
+    width: 50%;
+    z-index: 10;
+  }
 
-    line-height: 1.5;
-    h1{
-        font-family: var(--font-heading);
-        font-size: 2rem;
-        text-align: center;
-        font-weight: var(--font-weight-bold);
-        color: var(--color-white);
-        z-index: 10;
+  button {
+    color: var(--color-white);
+    border: none;
+    padding: var(--spacing-sm) var(--spacing-xl);
+    background: linear-gradient(to right bottom, var(--cyan), var(--blue));
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+    outline: none;
+    z-index: 10;
+  }
+
+  .img-hero {
+    margin-top: var(--spacing-xl);
+    height: 60vw;
+    z-index: 10;
+  }
+
+  .bg-curvy-desktop,
+  .bg-curvy-mobile {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+
+  .bg-curvy-mobile {
+    display: none;
+  }
+
+  p {
+    color: var(--color-white);
+    text-align: center;
+    font-family: var(--font-family-body);
+    font-size: 1em;
+    width: 30%;
+    z-index: 10;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-bottom: var(--spacing-lg);
+    gap: 0;
+    p {
+      width: 80%;
     }
-    
-    button{
-        color: var(--color-white);
-        border: none;
-        padding: var(--spacing-sm) var(--spacing-xl);
-        background: linear-gradient(to right bottom, var(--cyan), var(--blue));
-        font-size: 1rem;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        border-radius: 20px;
-        outline: none;
-        z-index: 10;
+    .bg-curvy-desktop {
+      display: none;
     }
 
-    .img-hero{
-        margin-top: var(--spacing-xl);
-        height: 50vh;
-        z-index: 10;
+    .bg-curvy-mobile {
+      display: inline !important;
     }
 
-    .bg-curvy{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
+    h1 {
+      font-size: 1.2rem !important;
+      width: 70% !important;
     }
-
-    p{
-        color: var(--color-white);
-        text-align: center;
-        font-family: var(--font-family-body);
-        font-size: 1em;
-        width: 30%;
-        z-index: 10;
-    }
+  }
 }

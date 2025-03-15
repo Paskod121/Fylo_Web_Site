@@ -1,87 +1,78 @@
-/* Styles pour la section des témoignages */
-/*je suis le grand*/
-/* Styles pour la section des témoignages */
-
 .testimonials {
-    background-color: var(--dark-blue-main); /* Couleur de fond principale */
-    padding: 3rem 1.5rem 5rem; /* Padding supérieur, horizontal et inférieur */
-    max-width: 1200px; /* Largeur maximale */
-    margin: 0 auto 2rem; /* Centrage horizontal avec marge en bas */
-    position: relative; /* Position relative */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px; /* Espacement entre les cartes */
+  padding: 50px 10%;
+  background-color: #181f2b; /* Assure-toi que la couleur correspond */
+  position: relative;
+}
+
+.testimonials img:first-child {
+  position: absolute;
+  top: 12px;
+  left: 140px;
+  width: 60px; /* Taille de l'icône de citation */
+}
+
+.testimonials div {
+  background-color: var( --dark-blue-testimonials);
+  padding: 20px;
+  border-radius: var(--border-radius-medium);
+  max-width: 330px;
+  flex: 1;
+  color: var(--white);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 25%;
+  z-index: 1;
+}
+
+.testimonials div p {
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: var(--font-testimonials);
+  color: var(--white-p);
+}
+
+.testimonials div img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.testimonials div h3 {
+  font-size: 12px;
+  margin-top: -35px;
+  margin-left: 40px;
+  margin-bottom: 14px;
+}
+
+.testimonials div p:last-child {
+  font-size: 11px;
+  color: var(--dark-white);
+  margin-top: -10px;
+  margin-left: 40px;
+}
+
+/* Responsive pour les petits écrans (375px) */
+@media (max-width: 768px) {
+  .testimonials {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .testimonials div {
+    max-width: 90%;
+    margin-bottom: 15px;
+  }
+
+  .testimonials img:first-child {
+    position: absolute;
+    top: 24px;
+    left: 185px;
+    width: 40px; /* Taille de l'icône de citation */
   }
   
-  .testimonials-grid {
-    display: grid; /* Disposition en grille */
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Colonnes responsives */
-    gap: 2rem; /* Espacement entre les éléments */
-    position: relative; /* Position relative */
-    z-index: 1; /* Niveau de superposition */
-  }
-  
-  .testimonial-card {
-    background-color: var(--dark-blue-testimonials); /* Couleur de fond des témoignages */
-    padding: 2rem; /* Padding uniforme */
-    border-radius: 5px; /* Bords arrondis */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Ombre portée */
-  }
-  
-  .testimonial-text {
-    font-family: var(--font-body); /* Police pour le texte */
-    font-size: 0.9rem; /* Taille du texte légèrement réduite */
-    margin-bottom: 1.5rem; /* Marge en bas */
-    line-height: 1.6; /* Hauteur de ligne augmentée */
-  }
-  
-  .testimonial-author {
-    display: flex; /* Disposition flexible */
-    align-items: center; /* Alignement vertical centré */
-  }
-  
-  .author-avatar {
-    width: 40px; /* Largeur de l'avatar */
-    height: 40px; /* Hauteur de l'avatar */
-    border-radius: 50%; /* Forme circulaire */
-    margin-right: 1rem; /* Marge à droite */
-  }
-  
-  .author-info {
-    display: flex; /* Disposition flexible */
-    flex-direction: column; /* Empilage vertical */
-  }
-  
-  .author-name {
-    font-family: var(--font-body); /* Police pour le nom */
-    font-weight: var(--font-bold); /* Poids gras */
-    font-size: 0.9rem; /* Taille du nom */
-  }
-  
-  .author-title {
-    font-family: var(--font-body); /* Police pour le titre */
-    font-size: 0.8rem; /* Taille du titre */
-    opacity: 0.8; /* Légère transparence */
-  }
-  
-  .testimonials-bg-quote {
-    position: absolute; /* Position absolue */
-    top: 0; /* Aligné en haut */
-    left: 2rem; /* Décalage à gauche */
-    z-index: 0; /* Derrière les témoignages */
-    opacity: 0.1; /* Très transparent */
-    width: 150px; /* Largeur fixe */
-    height: auto; /* Hauteur automatique */
-  }
-  
-  /* Media queries pour la responsivité */
-  @media (max-width: 768px) {
-    .testimonials {
-      padding: 2rem 1rem 4rem; /* Padding réduit sur mobile */
-    }
-    
-    .testimonials-grid {
-      grid-template-columns: 1fr; /* Une seule colonne sur mobile */
-    }
-    
-    .testimonials-bg-quote {
-      width: 100px; /* Image plus petite sur mobile */
-    }
-  }
+}

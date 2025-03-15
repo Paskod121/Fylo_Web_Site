@@ -14,11 +14,13 @@
     
     /* Couleurs neutres */
     --white: hsl(0, 0%, 100%); /* Blanc */
-    
+    --dark-white: #b3b3b3; /* Blanc pour les textes secondaires */
+    --white-p: #e7e7e7; /* Blanc pour les paragraphes */
     /* Typographie */
     --body-font-size: 14px; /* Taille de police pour le corps du texte */
     --font-heading: 'Raleway', sans-serif; /* Police pour les titres, CTA et navigation */
     --font-body: 'Open Sans', sans-serif; /* Police pour le corps du texte */
+    --font-testimonials: 'Open sans'; /* Police pour les témoignages */
     
     /* Poids des polices */
     --font-regular: 400; /* Poids régulier */
