@@ -6,12 +6,15 @@
   font-family: var(--font-body); /* Utilisation de la police Open Sans définie pour le corps du texte */
   font-size: var(--body-font-size); /* Taille de police de 14px définie pour le corps du texte */
   font-weight: var(--font-regular); /* Poids de police normal (400) */
+  position: relative;
+  padding-top: 120px;
 }
 
 .footer-container {
   max-width: 1200px; /* Largeur maximale du conteneur */
   margin: 0 auto; /* Centrage horizontal avec marges automatiques */
   padding: 0 30px; /* Marge intérieure horizontale de 30px */
+  
 }
 
 .footer-logo {

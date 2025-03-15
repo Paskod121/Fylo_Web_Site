@@ -1,69 +1,68 @@
-/* Styles pour la section d'appel à l'action */
-.cta {
-    background-color: hsl(217, 28%, 15%);
-    width: 60%;
-    height: 40%;
-    border-radius: 12px;
-    padding: 2%;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 5px 6px 6px rgb(73, 70, 92);
-    transition: 0.2s;
+ /* Contenu principal */
+ .main-content {
+    padding: 20px;
+    padding-bottom: 200px; /* Espace pour le footer et le CTA */
 }
-section h1 {
-    color: hsl(0, 0%, 100%);
+
+/* CTA Container */
+.cta-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: -80px; /* Chevauchement avec le footer */
+    z-index: 10;
+}
+
+.cta-box {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #1e2130;
+    border-radius: 10px;
+    padding: 40px;
+    color: white;
     text-align: center;
-    font-size: 190%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
-section p {
-    text-align: center;
-    color: aliceblue;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+
+.cta-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 600;
 }
-section input {
-    border-radius: 30px;
-    padding: 2%;
-    width: 60%;
-    margin: 3%;
-    margin-left: 2%;
+
+.cta-text {
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.cta-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cta-input {
+    flex-grow: 1;
+    padding: 15px;
     border: none;
+    border-radius: 50px;
+    margin-right: 15px;
+    font-size: 16px;
 }
-section button {
-    border-radius: 30px;
-    padding: 2%;
-    width: 28%;
-    background-color: hsl(176, 68%, 64%);
+
+.cta-button {
+    background-color: #4ecdc4;
+    color: white;
     border: none;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
 }
-/* Mobile : 375px */
-@media (max-width: 375px) {
-    .cta {
-        width: 90%; /* Réduire la largeur */
-        padding: 10px;
-    }
-    section h1 {
-        font-size: 1.5rem;
-        text-align: center;
-    }
-    section p {
-        font-size: 1rem;
-        margin-bottom: 15px;
-    }
-    section input, section button{
-        width: 97%;
-        height: 50px; /* Facilite le clic sur mobile */
-        margin-left: auto;
-        margin-right: auto;
-    }
-    section button {
-        margin-left: 1%;
-    }
-}
-/* Desktop : 1440px */
-@media (min-width: 1024px) {
-    .cta {
-        width: 50%; /* Largeur confortable sur écran plus large */
-    }
+
+.cta-button:hover {
+    background-color: #3dbeb5;
 }

@@ -11,6 +11,7 @@
     --cyan: hsl(176, 68%, 64%); /* Cyan pour le gradient du CTA */
     --blue: hsl(198, 60%, 50%); /* Bleu pour le gradient du CTA */
     --light-red: hsl(0, 100%, 63%); /* Rouge clair pour les erreurs */
+    --text-secondary: #9aaec7;
     
     /* Couleurs neutres */
     --white: hsl(0, 0%, 100%); /* Blanc */
@@ -48,6 +49,8 @@
     --spacing-md: 1.5rem;                           /* Espacement moyen (24px) */
     --spacing-lg: 2rem;                             /* Grand espacement (32px) */
     --spacing-xl: 3rem;                             /* Très grand espacement (48px) */
+    
+
   }
   /* 
     Comment utiliser ces variables:

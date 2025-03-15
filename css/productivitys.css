@@ -1,7 +1,4 @@
 /* Styles pour la section productivité */
-body{
-    color: black;
-}
 .productivitys{
     background-color: hsl(218, 28%, 13%);
     color: #fff;
@@ -17,6 +14,8 @@ body{
     }
     a{
         text-decoration: none;
+        color: var(--cyan);
+
     }
     #under{
         border-bottom: 1px hsl(176, 68%, 64%) solid;

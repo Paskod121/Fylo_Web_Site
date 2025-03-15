@@ -19,7 +19,7 @@
     }
     
     button{
-        background: linear-gradient(to right bottom, var(--color-cyan), var(--color-blue));
+        background: linear-gradient(to right bottom, var(--cyan), var(--blue));
         color: var(--color-white);
         border: none;
         padding: .9rem 4rem;

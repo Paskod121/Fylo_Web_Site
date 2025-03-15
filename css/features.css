@@ -38,7 +38,7 @@
 }
 .features p {
     margin-top: var(--spacing-xs) /* Très petit espacement entre p et h2 (8px) */;
-    color: rgba(255, 255, 255, 0.637); /* Couleur blanche avec opacité */
+    color:var(--text-secondary#9aaec7) /* Couleur blanche avec opacité */
 }
 /* Responsivité */
 @media (min-width: 375px) {

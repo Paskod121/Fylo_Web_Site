@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head class="container">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
@@ -84,7 +84,7 @@
       <h1>Stay productive,<br> wherever you are</h1>
       <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
       <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
-      <p><a href="#" id="under" style="color:hsl(176, 68%, 64%);">See how Fylo works <img src="./images/icon-arrow.svg" alt="arrow"></a></p>
+      <p><a href="#" class="under" >See how Fylo works <img src="./images/icon-arrow.svg" alt="arrow"></a></p>
     </div>
   </section>
   <section class="testimonials">
@@ -109,11 +109,15 @@
     </div>
   </section>
 </main>
-<section class="cta">
-  <h1>Get early access today</h1>
-  <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
-  <input type="email" placeholder="ZuS6o@example.com" id="email" required>
-  <button>Get Started For Free</button>
+<section class="cta-container">
+  <div class="cta-box">
+      <h2 class="cta-title">Get early access today</h2>
+      <p class="cta-text">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
+      <div class="cta-form">
+          <input type="email" class="cta-input" placeholder="email@example.com">
+          <button class="cta-button">Get Started For Free</button>
+      </div>
+  </div>
 </section>
 <footer class="footer">
   <div class="footer-container">
