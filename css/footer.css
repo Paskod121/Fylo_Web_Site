@@ -22,8 +22,9 @@
 }
 
 .footer-logo img {
-  width: auto; /* Largeur automatique pour respecter les proportions */
+  width: 150px; /* Largeur automatique pour respecter les proportions */
   height: auto; /* Hauteur automatique pour respecter les proportions */
+  padding-left: 50px;
 }
 
 .footer-content {
@@ -34,13 +35,14 @@
 
 .footer-location {
   display: flex; /* Disposition flexible pour aligner l'icône et le texte */
-  align-items: flex-start; /* Alignement des éléments en haut */
+  flex-direction: row;
 }
 
 .footer-location img {
-  margin-right: 15px; /* Marge à droite de 15px pour séparer l'icône du texte */
-  margin-top: 5px; /* Marge en haut de 5px pour aligner visuellement l'icône avec le texte */
-  flex-shrink: 0; /* Empêche l'icône de rétrécir */
+  margin: 5px;
+  height: 20px;
+  padding-top: 13px;
+  padding-right: 25px;
 }
 
 .footer-location p {
