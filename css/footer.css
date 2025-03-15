@@ -1,1 +1,238 @@
-/* Styles pour le pied de page */
+/* Styles du pied de page */
+.footer {
+  background-color: var(--dark-blue-footer); /* Utilisation de la couleur de fond définie pour le pied de page */
+  color: var(--white); /* Utilisation de la couleur blanche pour le texte */
+  padding: 200px 0 80px; /* Marge intérieure : 200px en haut, 0 sur les côtés, 80px en bas */
+  font-family: var(--font-body); /* Utilisation de la police Open Sans définie pour le corps du texte */
+  font-size: var(--body-font-size); /* Taille de police de 14px définie pour le corps du texte */
+  font-weight: var(--font-regular); /* Poids de police normal (400) */
+  position: relative;
+}
+
+.footer-container {
+  max-width: 1200px; /* Largeur maximale du conteneur */
+  margin: 0 auto; /* Centrage horizontal avec marges automatiques */
+  padding: 0 30px; /* Marge intérieure horizontale de 30px */
+}
+
+.footer-logo {
+  margin-bottom: 30px; /* Marge externe en bas de 30px pour espacer le logo du contenu suivant */
+}
+
+.footer-logo img {
+  width: auto; /* Largeur automatique pour respecter les proportions */
+  height: auto; /* Hauteur automatique pour respecter les proportions */
+}
+
+.footer-content {
+  display: grid; /* Utilisation de la mise en page en grille */
+  grid-template-columns: 1.5fr 1fr 1fr 1fr; /* Répartition des colonnes : 1.5 pour l'adresse, 1 pour les autres sections */
+  gap: 40px; /* Espacement de 40px entre les éléments de la grille */
+}
+
+.footer-location {
+  display: flex; /* Disposition flexible pour aligner l'icône et le texte */
+  align-items: flex-start; /* Alignement des éléments en haut */
+}
+
+.footer-location img {
+  margin-right: 15px; /* Marge à droite de 15px pour séparer l'icône du texte */
+  margin-top: 5px; /* Marge en haut de 5px pour aligner visuellement l'icône avec le texte */
+  flex-shrink: 0; /* Empêche l'icône de rétrécir */
+}
+
+.footer-location p {
+  line-height: 1.6; /* Hauteur de ligne pour une meilleure lisibilité */
+}
+
+.footer-contact {
+  display: flex; /* Disposition flexible */
+  flex-direction: column; /* Disposition en colonne */
+  gap: 20px; /* Espacement de 20px entre les éléments */
+}
+
+.contact-item {
+  display: flex; /* Disposition flexible pour aligner l'icône et le texte */
+  align-items: center; /* Alignement vertical au centre */
+}
+
+.contact-item img {
+  margin-right: 15px; /* Marge à droite de 15px pour séparer l'icône du texte */
+  flex-shrink: 0; /* Empêche l'icône de rétrécir */
+}
+
+.footer-links {
+  display: flex; /* Disposition flexible pour les deux colonnes de liens */
+  gap: 80px; /* Espacement de 80px entre les colonnes */
+}
+
+.links-column {
+  list-style: none; /* Suppression des puces de liste */
+  padding: 0; /* Suppression de la marge intérieure par défaut */
+  margin: 0; /* Suppression de la marge externe par défaut */
+}
+
+.links-column li {
+  margin-bottom: 15px; /* Marge en bas de 15px entre chaque lien */
+}
+
+.links-column a {
+  color: var(--white); /* Couleur de texte blanche */
+  text-decoration: none; /* Suppression du soulignement des liens */
+  transition: color 0.2s; /* Transition douce pour la couleur lors du survol */
+}
+
+.links-column a:hover {
+  color: var(--cyan); /* Utilisation de la couleur cyan au survol */
+  font-weight: var(--font-bold); /* Poids de police en gras (700) au survol */
+}
+
+.social-icons {
+  display: flex; /* Disposition flexible pour les icônes sociales */
+  justify-content: flex-start; /* Alignement au début */
+  gap: 15px; /* Espacement de 15px entre les icônes */
+}
+
+.social-icon {
+  display: flex; /* Disposition flexible */
+  align-items: center; /* Centrage vertical */
+  justify-content: center; /* Centrage horizontal */
+  width: 30px; /* Largeur de l'icône */
+  height: 30px; /* Hauteur de l'icône */
+  border: 1px solid var(--white); /* Bordure blanche de 1px */
+  border-radius: 50%; /* Bordure arrondie pour créer un cercle */
+  color: var(--white); /* Couleur de l'icône en blanc */
+  text-decoration: none; /* Suppression du soulignement */
+  transition: all 0.2s; /* Transition douce pour tous les changements au survol */
+}
+
+.social-icon:hover {
+  color: var(--cyan); /* Couleur cyan pour l'icône au survol */
+  border-color: var(--cyan); /* Couleur cyan pour la bordure au survol */
+}
+
+.attribution {
+  text-align: center; /* Centrage du texte */
+  font-size: 12px; /* Taille de police plus petite pour l'attribution */
+  margin-top: 50px; /* Marge supérieure de 50px */
+  color: var(--white); /* Couleur de texte blanche */
+}
+
+.attribution a {
+  color: var(--cyan); /* Couleur cyan pour les liens dans l'attribution */
+}
+
+/* Styles responsifs */
+@media screen and (max-width: var(--desktop-width)) { /* Pour les écrans jusqu'à 1440px */
+  .footer-container {
+    max-width: 1200px; /* Largeur maximale du conteneur */
+    padding: 0 40px; /* Augmentation de la marge intérieure horizontale */
+  }
+}
+
+@media screen and (max-width: 1024px) { /* Pour les écrans jusqu'à 1024px */
+  .footer-content {
+    grid-template-columns: 1.2fr 1fr 1fr 0.8fr; /* Ajustement des proportions des colonnes */
+    gap: 30px; /* Réduction de l'espacement entre les éléments */
+  }
+  
+  .footer-links {
+    gap: 40px; /* Réduction de l'espacement entre les colonnes de liens */
+  }
+}
+
+@media screen and (max-width: 768px) { /* Pour les écrans jusqu'à 768px (tablettes) */
+  .footer-content {
+    grid-template-columns: 1fr 1fr; /* Passage à deux colonnes */
+    row-gap: 50px; /* Espacement vertical entre les rangées */
+    column-gap: 30px; /* Espacement horizontal entre les colonnes */
+  }
+  
+  .footer-location {
+    grid-column: 1 / 3; /* La section adresse occupe toute la largeur */
+  }
+  
+  .footer {
+    padding: 150px 0 60px; /* Réduction du padding vertical */
+  }
+}
+
+@media screen and (max-width: 600px) { /* Pour les écrans jusqu'à 600px */
+  .footer-container {
+    padding: 0 25px; /* Réduction de la marge intérieure horizontale */
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr; /* Passage à une seule colonne */
+    gap: 40px; /* Espacement uniforme entre les éléments */
+  }
+  
+  .footer-location {
+    grid-column: auto; /* Réinitialisation pour une seule colonne */
+  }
+  
+  .footer-links {
+    flex-direction: column; /* Passage des colonnes de liens en vertical */
+    gap: 30px; /* Espacement entre les colonnes de liens */
+  }
+  
+  .social-icons {
+    justify-content: center; /* Centrage des icônes sociales */
+    margin-top: 20px; /* Marge supérieure de 20px */
+  }
+}
+
+/* Ciblage spécifique pour les écrans mobiles */
+@media screen and (max-width: var(--mobile-width)) { /* Pour les écrans jusqu'à 375px */
+  .footer-container {
+    padding: 0 20px; /* Réduction supplémentaire de la marge intérieure horizontale */
+  }
+  
+  .footer {
+    padding: 120px 0 50px; /* Réduction du padding vertical */
+  }
+  
+  .footer-logo img {
+    width: 120px; /* Réduction de la taille du logo */
+  }
+  
+  .footer-location img,
+  .contact-item img {
+    width: 18px; /* Réduction de la taille des icônes */
+    margin-right: 12px; /* Réduction de la marge à droite */
+  }
+  
+  .links-column li {
+    margin-bottom: 12px; /* Réduction de l'espacement entre les liens */
+  }
+}
+
+/* Assurer la conformité WCAG pour les petits écrans */
+@media screen and (max-width: var(--min-width)) { /* Pour les écrans jusqu'à 320px */
+  .footer-container {
+    padding: 0 15px; /* Réduction maximale de la marge intérieure horizontale */
+  }
+  
+  .footer-location {
+    flex-direction: column; /* Passage en colonne pour la section adresse */
+  }
+  
+  .footer-location img {
+    margin-bottom: 10px; /* Marge en bas pour l'icône */
+  }
+  
+  .contact-item {
+    align-items: flex-start; /* Alignement en haut pour les éléments de contact */
+  }
+  
+  .contact-item img {
+    margin-top: 3px; /* Marge en haut pour aligner visuellement l'icône avec le texte */
+  }
+}
+
+/* États de focus pour l'accessibilité */
+a:focus,
+.social-icon:focus {
+  outline: 2px solid var(--cyan); /* Contour cyan pour les éléments en focus */
+  outline-offset: 2px; /* Décalage du contour pour meilleure visibilité */
+}

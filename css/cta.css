@@ -1,1 +1,70 @@
-/* Styles pour la section d'appel à l'action */
+/* Styles pour la .cta d'appel à l'action */
+.cta {
+    background-color: hsl(217, 28%, 15%);
+    width: 50vw;
+    border-radius: 12px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-xs);
+    box-shadow: 5px 6px 6px rgb(73, 70, 92);
+    transition: 0.2s;
+    position: absolute !important;
+    right: 0;
+    left: 0;
+    top: -5%; 
+}
+.cta h1 {
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    font-size: 190%;
+}
+.cta p {
+    text-align: center;
+    color: aliceblue;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cta input {
+    padding: 2%;
+    width: 95%;
+}
+.cta button {
+    border-radius: 30px;
+    margin-bottom: 5%;
+    background-color: hsl(176, 68%, 64%);
+    border: none;
+}
+
+/* Mobile : 375px */
+@media (max-width: 375px) {
+    .cta {
+        width: 90%; /* Réduire la largeur */
+        padding: 10px;
+    }
+    .cta h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .cta p {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+    .cta input, .cta button{
+        width: 97%;
+        height: 50px; /* Facilite le clic sur mobile */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cta button {
+        margin-left: 1%;
+    }
+}
+/* Desktop : 1440px */
+@media (min-width: 1440px) {
+    .cta {
+        width: 50%; /* Largeur confortable sur écran plus large */
+    }
+}

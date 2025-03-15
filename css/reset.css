@@ -1,1 +1,46 @@
-/* Ce fichier réinitialise les styles par défaut du navigateur */
+* /Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: var(--font-regular);
+  font-size: var(--body-font-size);
+  color: var(--white);
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: var(--font-bold);
+  line-height: 1.2;
+}
+
+
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-heading);
+  font-weight: var(--font-bold);
+}
+
+input {
+  font-family: var(--font-body);
+}
