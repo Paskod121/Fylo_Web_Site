@@ -1,6 +1,9 @@
 /* Styles pour la section des fonctionnalités */
+<<<<<<< HEAD
+=======
 /* Cette partie sera codée par Joshua */
 /* Styles pour la section des fonctionnalités */
+>>>>>>> 3ad03bb32b06e01da7486aa6ee712aa18ccdbe3a
 /* Le background doit etre l'img bg-curvy-desktop.svg, mais je met le --color-dark-blue-main en attendant*/
 .features {
     background: var(--color-dark-blue-main);
@@ -56,5 +59,7 @@
     .features {
       max-width: 1100px; /* Plus large sur grand écran */
       gap: 50px 100px;
+      grid-template-columns: 1fr 1fr;
+      padding: 0 3rem 5rem;
     }
   }
