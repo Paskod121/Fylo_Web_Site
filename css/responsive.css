@@ -108,17 +108,7 @@
   
   /* Media Queries */
   @media screen and (min-width: 768px) {
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 2rem 3rem;
-    }
-    
-    header ul {
-      display: flex;
-      gap: 2rem;
-    }
+
     
     .hero h1 {
       font-size: 2.5rem;
@@ -173,10 +163,7 @@
   }
   
   @media screen and (min-width: 1024px) {
-    header {
-      padding: 2rem 5rem;
-    }
-    
+
     .hero {
       padding: 3rem 0 5rem;
     }
