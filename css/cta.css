@@ -39,7 +39,7 @@
     .cta {
         width: 70%; /* Réduire la largeur */
         padding: 1px;
-        height: 33%;
+        height: 33%
     }
     .cta h1 {
         font-size: 1.5rem;
@@ -58,11 +58,12 @@
     .cta input {
         height: 15%;
         width: 80%;
+
         margin-left: -20%;
     }
     .cta button {
         width: 110%
-    }
+
     .cta button {
         margin-left: -20%;
     }

@@ -42,6 +42,7 @@
     color: rgba(255, 255, 255, 0.637); /* Couleur blanche avec opacité */
 }
 /* Responsivité */
+
 @media (max-width: 375px) {
   .features {
     grid-template-columns: 1fr; /* une seule colonne */
@@ -51,6 +52,7 @@
     padding-left: var( --spacing-xl); 
     padding-right: var( --spacing-xl);
     margin-left: -10%;
+
   }
 }
 

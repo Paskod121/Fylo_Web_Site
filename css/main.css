@@ -99,6 +99,7 @@ input[type="email"] {
   border-radius: 30px;
   border: none;
   margin-bottom: 1.5rem;
+  width: ;
 }
 
 input[type="email"]::placeholder {
