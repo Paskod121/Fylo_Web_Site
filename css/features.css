@@ -3,6 +3,7 @@
 /* Styles pour la section des fonctionnalités */
 /* Le background doit etre l'img bg-curvy-desktop.svg, mais je met le --color-dark-blue-main en attendant*/
 .features {
+    min-width: var( --min-width);
     background: var(--color-dark-blue-main);
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
@@ -52,9 +53,11 @@
     }
   }
   
-  @media (max-width: 1440px) {
+  @media (min-width: 1440px) {
     .features {
       max-width: 1100px; /* Plus large sur grand écran */
       gap: 50px 100px;
+      grid-template-columns: 1fr 1fr;
+      padding: 0 3rem 5rem;
     }
   }

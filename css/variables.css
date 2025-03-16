@@ -14,15 +14,25 @@
     
     /* Couleurs neutres */
     --white: hsl(0, 0%, 100%); /* Blanc */
-    
+    --dark-white: #b3b3b3; /* Blanc pour les textes secondaires */
+    --white-p: #e7e7e7; /* Blanc pour les paragraphes */
     /* Typographie */
     --body-font-size: 14px; /* Taille de police pour le corps du texte */
     --font-heading: 'Raleway', sans-serif; /* Police pour les titres, CTA et navigation */
     --font-body: 'Open Sans', sans-serif; /* Police pour le corps du texte */
+    --font-testimonials: 'Open sans'; /* Police pour les témoignages */
     
     /* Poids des polices */
     --font-regular: 400; /* Poids régulier */
     --font-bold: 700; /* Poids gras */
+    
+    /* Tailles d'écran */
+    --mobile-width: 375px; /* Largeur pour mobile */
+    --desktop-width: 1440px; /* Largeur pour desktop */
+    --min-width: 320px; /* Largeur minimale pour la responsivité */ 
+    /* Poids des Polices */
+    --font-weight-regular: 400;                     /* Poids normal pour le texte standard */
+    --font-weight-bold: 700;                        /* Poids gras pour les éléments importants */
     
     /* Points de Rupture pour Responsive */
     --mobile-width: 375px;                          /* Largeur de référence pour mobile */
@@ -40,10 +50,6 @@
     --spacing-md: 1.5rem;                           /* Espacement moyen (24px) */
     --spacing-lg: 2rem;                             /* Grand espacement (32px) */
     --spacing-xl: 3rem;                             /* Très grand espacement (48px) */
-    /* Tailles d'écran */
-    --mobile-width: 375px; /* Largeur pour mobile */
-    --desktop-width: 1440px; /* Largeur pour desktop */
-    --min-width: 320px; /* Largeur minimale pour la responsivité */ 
   }
   /* 
     Comment utiliser ces variables:
