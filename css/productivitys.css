@@ -8,7 +8,7 @@ body{
     font-family: var(--font-body);
     font-weight: var(--font-regular);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     text-align: start;
     align-items: center;
     justify-content: space-between;
@@ -25,43 +25,51 @@ body{
         padding-left: 5px;
     }
     h1{
-        color: hsl(0, 0%, 100%);
-        font-size: 250%;
-        padding-right: 250px;
+        color: var(--white);
+        font-size: 120%;
+
+    }
+    p{
+        font-size: large;
+        padding-right: 18%;
+    }
+    .textdiv{
+        padding-left: 40px;
     }
 }
 .imgproductivitys{
     align-content: center;
+    padding-left: 300px;
 }
-@media screen and (min-width:375px) {
+@media screen and (max-width:375px) {
     .productivitys{
         display: flex;
         flex-direction: column;
         h1{
-            display: block;
+            font-size: large;
+            padding-right: 0px;
         }
     }
     .imgproductivitys{
         align-content: center;
-        height: 90%;
-        width: 90%;
-        padding-left: 20px;
-    }
-    div{
-        padding-left: 50px;
-    }
-    h1{
-        font-size: 750px;
-        padding-right: 0px;
+        width: 80%;
+        height: 80%;
+        padding: 60px;
     }
 }
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1320px) {
     .productivitys{
         display: flex;
         flex-direction: row;
+        h1{
+            font-size: 250%;
+            padding-right: 100px;
+        }
     }
     .imgproductivitys{
         align-content: center;
+        width: 120%;
+        height: 120%;
     }
     div{
         padding-left: 50px;

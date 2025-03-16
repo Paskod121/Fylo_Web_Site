@@ -138,12 +138,12 @@
   }
   
   .productivitys img:first-child {
-    max-width: 45%;
+    max-width: auto;
     margin: 0 5% 0 0;
   }
   
   .productivitys h1, .productivitys p {
-    width: 50%;
+    width: 100%;
   }
   
   .testimonials {
