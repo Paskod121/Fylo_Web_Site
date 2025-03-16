@@ -37,7 +37,7 @@ a {
 
 a:hover {
   color: var(--cyan);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 section {
@@ -93,26 +93,26 @@ main::before {
   z-index: 2;
 }
 
-/* Input fields styling */
+/* Input  */
 input[type="email"] {
   padding: 1rem 2rem;
   border-radius: 30px;
   border: none;
   margin-bottom: 1.5rem;
-  width: ;
+  width: 50%;
 }
 
 input[type="email"]::placeholder {
   color: rgba(0, 0, 0, 0.5);
 }
 
-/* Icon styling for features and footer */
+/* Icon footer et features */
 .footer-icon {
   margin-right: 1rem;
   flex-shrink: 0;
 }
 
-/* Social icons */
+/* iconnes social */
 .social-icons {
   display: flex;
   gap: 1rem;

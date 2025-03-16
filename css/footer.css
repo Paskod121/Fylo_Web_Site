@@ -18,7 +18,7 @@
 }
 
 .footer-logo {
-  margin-bottom: 30px; /* Marge externe en bas de 30px pour espacer le logo du contenu suivant */
+  margin-bottom: var(--spacing-lg); /* Marge externe en bas de 30px pour espacer le logo du contenu suivant */
 }
 
 .footer-logo img {
@@ -28,13 +28,13 @@
 }
 
 .footer-content {
-  display: grid; /* Utilisation de la mise en page en grille */
-  grid-template-columns: 1.5fr 1fr 1fr 1fr; /* Répartition des colonnes : 1.5 pour l'adresse, 1 pour les autres sections */
-  gap: 40px; /* Espacement de 40px entre les éléments de la grille */
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: var(--spacing-lg);
 }
 
 .footer-location {
-  display: flex; /* Disposition flexible pour aligner l'icône et le texte */
+  display: flex; 
   flex-direction: row;
 }
 
@@ -87,7 +87,7 @@
 }
 
 .links-column a:hover {
-  color: var(--cyan); /* Utilisation de la couleur cyan au survol */
+  color: var(--white); /* Utilisation de la couleur cyan au survol */
   font-weight: var(--font-bold); /* Poids de police en gras (700) au survol */
 }
 
@@ -223,7 +223,7 @@
   
   .footer-location img {
     margin-bottom: 10px; /* Marge en bas pour l'icône */
-  }
+  } 
   
   .contact-item {
     align-items: flex-start; /* Alignement en haut pour les éléments de contact */

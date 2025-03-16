@@ -48,27 +48,31 @@
         font-size: 1rem;
         margin-bottom: 15px;
     }
-    .cta input, .cta button{
+    .cta input{
         width: 100%;
-        height: 50px; /* Facilite le clic sur mobile */
+        height: 50px; /* clic sur mobile */
         margin-left: auto;
         margin-right: auto;
     }
-    .cta input {
-        height: 15%;
-        width: 80%;
-    }
+    
     .cta button {
         width: 105%;
         margin-left: 20%;
+
     }
-    .cta button {
-        margin-left: 1%;
-    }
+
 }
 /* Desktop : 1440px */
 @media (min-width: 1440px) {
     .cta {
         width: 50%; /* Largeur confortable sur écran plus large */
+    }
+    .cta{
+        height: 40%;
+        margin: 100%;
+    }
+    .cta button {
+        width: 105%;
+        margin-left: 100%;
     }
 }

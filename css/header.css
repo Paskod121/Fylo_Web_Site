@@ -33,7 +33,7 @@ header {
   }
   header ul li:hover {
     color: var(--color-white); 
-    text-decoration: underline; /* Souligne le texte au survol */
+    text-decoration: none; /* Souligne le texte au survol */
   }
   header img {
     order: -1; /* Place le logo après la liste */
