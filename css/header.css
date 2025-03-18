@@ -6,7 +6,7 @@
     font-family: var(--font-family-body);
   } */
    /* Branche features_header supprimée*/
-header {
+   header {
     background: hsl(217, 28%, 15%);
     font-family: var(--font-family-headings);
     color: var(--color-white);
@@ -17,6 +17,8 @@ header {
     align-items: center; /* Aligne verticalement */
     padding: 20px;
     font-size: 14px;
+    width: 100%;
+    margin-left: 0%;
   }
   header ul {
     list-style: none;
@@ -33,49 +35,62 @@ header {
   }
   header ul li:hover {
     color: var(--color-white); 
-    text-decoration: underline; /* Souligne le texte au survol */
+    text-decoration: none; /* Souligne le texte au survol */
   }
   header img {
     order: -1; /* Place le logo après la liste */
+    margin-left: 0%;
   }
 /* Responsivité */
-  @media (min-width: 375px) {
-    header {
-      padding: 10px 5%;
-    }
-  
-    header img {
-      width: 30%; /* Le logo prend 80% de la largeur de l'écran */
-      max-width: 250px; /* Empêcher qu'il devienne trop grand */
-    }
-  
-    header ul {
-      gap: 1rem; /* Réduction de l'espace entre les éléments de la liste */
-      font-size: 10px;
-      margin-right: 2px;
-    }
-    header ul li {
-      font-size: 14px;
-      margin-left: 2px;
-
-  }
-}
-@media (min-width: 1440px) {
+@media (max-width: 375px) {
   header {
-    padding: 20px 10%;
+    background: hsl(217, 28%, 15%);
+    font-family: var(--font-family-headings);
+    color: var(--color-white);
+    padding: var(--spacing-md) 0; /* Espacement en haut et en bas */
+    font-weight: var(--font-weight-regular);
+    display: flex;
+    justify-content: space-between; /* Sépare les éléments */
+    align-items: center; /* Aligne verticalement */
+    padding: 0px;
+    font-size: 14px;
   }
+
+  header img {
+    width: 30%; /* Le logo prend 80% de la largeur de l'écran */
+    max-width: 250px; /* Empêcher qu'il devienne trop grand */
+  }
+
   header ul {
-    gap: 3rem; /* Réduction de l'espace entre les éléments de la liste */
-    font-size: 4px;
+    list-style: none;
+    display: flex;
+    gap: var(--spacing-lg); /* Grand espacement de 2rem entre les éléments */
+    padding: 0;
+    margin: 0;
+    order: 1; /* Place la liste avant le logo */
+    margin-right: 30px;/* Ajoute un espace à droite */
   }
   header ul li {
     font-size: 14px;
-    gap: 3rem;
     margin-left: 2px;
-    padding-left: var(--spacing-lg);
-  } 
-  header img {
-    width: 80%; /* Le logo prend 80% de la largeur de l'écran */
-    max-width: 250px; /* Empêcher qu'il devienne trop grand */
   }
+}
+@media (min-width: 1440px) {
+header {
+  padding: 20px 10%;
+}
+header ul {
+  gap: 3rem; /* Réduction de l'espace entre les éléments de la liste */
+  font-size: 4px;
+}
+header ul li {
+  font-size: 14px;
+  gap: 3rem;
+  margin-left: -2px;
+  padding-left: var(--spacing-lg);
+} 
+header img {
+  width: 80%; /* Le logo prend 80% de la largeur de l'écran */
+  max-width: 250px; /* Empêcher qu'il devienne trop grand */
+}
 }
