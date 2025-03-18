@@ -33,11 +33,12 @@ body{
 .imgproductivitys{
     align-content: center;
 }
-@media screen and (min-width:375px) {
+@media screen and (max-width:375px) {
     .productivitys{
         display: flex;
         flex-direction: column;
-        h1{
+        
+        h1 {
             display: block;
         }
     }
@@ -50,8 +51,14 @@ body{
     div{
         padding-left: 50px;
     }
-    h1{
-        font-size: 750px;
+    .h1pproductivitys {
+        align-content: center;
+        height: 90%;
+        width: 90%;
+        padding-left: 20px;
+    }
+    .h1pproductivitys h1{
+        font-size: 19px;
         padding-right: 0px;
     }
 }

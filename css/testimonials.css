@@ -61,9 +61,12 @@
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    margin-bottom: 150px;
+    margin-bottom: 40%;
   }
+  .testimonials img {
+    margin-left: -38%;
 
+  }
   .testimonials div {
     max-width: 90%;
     margin-bottom: 15px;

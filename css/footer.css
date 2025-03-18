@@ -240,3 +240,35 @@ a:focus,
   outline: 2px solid var(--cyan); /* Contour cyan pour les éléments en focus */
   outline-offset: 2px; /* Décalage du contour pour meilleure visibilité */
 }
+@media (max-width: 375px) {
+  .footer {
+      width: 100%;
+      padding: 1px;
+  }
+  .footer-container {
+      text-align: center;
+      margin-left: -30%;
+      padding: -100%;
+  }
+  .footer-logo {
+    margin-left: -35%;
+    margin-top: 65%;
+  }
+  .footer-location {
+    margin-left: 8%;
+    width: 70%;
+    align-items: flex-start;
+  }
+  .footer-contact {
+    margin-top: -10%;
+    margin-left: -8%;
+  }
+  .footer-links {
+    margin-left: -60%;
+  }
+  .attribution {
+      margin-left: -6%;
+      margin-top: 2%;
+      width: 80%;
+  }
+}
